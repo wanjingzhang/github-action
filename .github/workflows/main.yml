@@ -28,3 +28,13 @@ jobs:
         cache: 'npm'
     - run: npm install 
     - run: npm test
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: build
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: npm install && npm run build
