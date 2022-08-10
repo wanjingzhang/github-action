@@ -10,6 +10,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <div>Open my heart haha change folder</div>
+        <div>已经新建了一个branch gh-pages</div>
         <a
           className="App-link"
           href="https://reactjs.org"
